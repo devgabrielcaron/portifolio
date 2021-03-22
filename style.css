@@ -27,11 +27,34 @@
     flex-direction: column;
     justify-content: space-evenly;
     cursor: pointer;
+   
+}
+
+.hamburguer_ani_active{
+    animation: showhide2 1s;
 }
 
 .show-menu .hamburguer{
     right: 16rem;
+    animation: showhide 1.1s;
 }
+
+@keyframes showhide {
+    to{
+        right: 16rem;
+    }from{
+        right: 2rem;
+    }
+}
+
+@keyframes showhide2 {
+    to{
+        right: 2rem;
+    }from{
+        right: 16rem;
+    }
+}
+
 
 .line{
     width: 100%;
